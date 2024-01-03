@@ -1,15 +1,5 @@
 var app = angular.module('tradeSkills', []);
 
-getJSON();
-
-function getJSON() {
-    fetch("assets/enchanting-formulas.json")
-        .then((res) => {
-            return res.json();
-        })
-        .then((data) => console.log(data));
-}
-
 app.filter("unique", function () {
     return function (collection, keyname) {
         var output = [],
@@ -25,6 +15,30 @@ app.filter("unique", function () {
     };
 });
 
+
+var JSONenchantingFormulas = loadJSON('assets/enchanting_formulas.json');
+console.log(JSONenchantingFormulas);
+
+
+function loadJSON(callback) {
+
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'assets/enchanting_formulas.json', true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+        }
+    };
+    xobj.send(null);
+}
+
+loadJSON(function (response) {
+    // Parse JSON string into object
+    var actual_JSON = JSON.parse(response);
+    console.log(actual_JSON);
+});
 
 app.controller('tradeSkillsCntrl', function ($scope) {
 
@@ -66,6 +80,9 @@ app.controller('tradeSkillsCntrl', function ($scope) {
     $scope.cookingRecipesCount = $scope.cookingRecipes.length;
 
 });
+
+
+
 
 function getCategory(spellName) {
     var category = "Other";

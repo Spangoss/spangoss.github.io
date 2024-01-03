@@ -1,4 +1,4 @@
-[
+data = [
     {
         "id": "13529",
         "name": "Enchant 2H Weapon - Lesser Impact",
