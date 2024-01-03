@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" ng-app="tradeSkills" ng-controller="tradeSkillsCntrl" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>spangoss.net</title>
+    <!-- Bootstrap Styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body class="h-100 d-flex flex-column">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg px-2">
+        <div class="container py-1">
+            <a class="navbar-brand" href="index.html">
+                <svg class="inline-block logo" width="40" viewBox="0 0 500 354" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M 342.174805 354.541504 L 371.57785 354.541504 C 424.347595 354.541504 441.288422 337.767944 441.288422 285.886963 L 441.288422 242.587784 C 441.288422 212.161331 456.671478 197.923325 500.678711 200.848938 L 500.678711 154.429108 C 456.671478 157.354721 441.288422 143.116714 441.288422 112.495224 L 441.288422 69.196045 C 441.288422 17.315063 424.347595 0.541504 371.57785 0.541504 L 342.174805 0.541504 L 342.174805 36.819183 L 361.841736 36.819183 C 390.076477 36.819183 395.723419 43.450592 395.723419 76.217529 L 395.723419 129.853897 C 395.723419 156.574554 415.390381 174.323318 452.192871 175.883652 L 452.192871 179.394394 C 415.390381 180.954727 395.723419 198.508453 395.723419 225.424149 L 395.723419 278.865479 C 395.723419 311.632416 390.076477 318.263824 361.841736 318.263824 L 342.174805 318.263824 Z M 167.727036 135.88266 C 167.727036 167.674393 187.588699 187.958694 226.922592 196.73555 L 258.857056 203.757034 C 283.197327 209.023163 292.154541 216.239685 292.154541 230.282654 C 292.154541 246.861176 276.576782 257.783478 251.847046 257.783478 C 227.701492 257.783478 211.539536 248.226471 207.645096 231.452911 L 162.664261 231.452911 C 165.779816 270.071106 198.882599 293.281006 251.068161 293.281006 C 304.61676 293.281006 338.693176 266.560364 338.693176 225.016541 C 338.693176 193.02977 319.805115 174.89093 277.16095 165.723984 L 245.421204 158.897537 C 222.249268 153.826462 212.513153 146.024811 212.513153 132.371918 C 212.513153 116.378525 227.50676 105.846298 250.289261 105.846298 C 272.292877 105.846298 287.675934 115.793411 290.791504 131.786789 L 333.630402 131.786789 C 330.709564 93.363647 299.748718 70.738861 250.873428 70.738861 C 200.440369 70.738861 167.727036 96.094238 167.727036 135.88266 Z M 159.182617 354.541504 L 159.182617 318.263824 L 139.515671 318.263824 C 111.280945 318.263824 105.634003 311.632416 105.634003 278.865479 L 105.634003 225.424149 C 105.634003 198.508453 85.967056 180.954727 49.164551 179.394394 L 49.164551 175.883652 C 85.967056 174.323318 105.634003 156.574554 105.634003 129.853897 L 105.634003 76.217529 C 105.634003 43.450592 111.280945 36.819183 139.515671 36.819183 L 159.182617 36.819183 L 159.182617 0.541504 L 129.779556 0.541504 C 77.009834 0.541504 60.068996 17.315063 60.068996 69.196045 L 60.068996 112.495224 C 60.068996 143.116714 44.68594 157.354721 0.678711 154.429108 L 0.678711 200.848938 C 44.68594 197.923325 60.068996 212.161331 60.068996 242.587784 L 60.068996 285.886963 C 60.068996 337.767944 77.009834 354.541504 129.779556 354.541504 Z" />
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- Theme Selector -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="me-2 theme-icon-active"></i><span class="d-lg-none">Toggle
+                                Theme</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" data-bs-theme-value="light">
+                                    <i class="bi-sun-fill me-2 theme-icon"></i>Light
+                                </button></li>
+                            <li><button class="dropdown-item" data-bs-theme-value="dark"><i
+                                        class="bi-moon-stars-fill me-2 theme-icon"></i>Dark</button>
+                            </li>
+                            <li><button class="dropdown-item" data-bs-theme-value="auto"><i
+                                        class="bi-circle-half me-2 theme-icon"></i>Auto</button></li>
+                        </ul>
+                    </li>
+                </ul>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container mb-3">
+        <div class="row">
+            <div class="col">
+                <h1>Spangoss' Tradeskills</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>A list of Enchanting, Tailoring and Cooking recipes that can be crafted by Spangoss on the Wild
+                        Growth EU Server on World of Warcraft Season of Discovery.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mb-4">
+        <div class="row">
+            <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <!-- Enchanting -->
+                    <button class="nav-link active" id="nav-enchanting-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-enchanting" type="button" role="tab" aria-controls="nav-enchanting"
+                        aria-selected="true">Enchanting<span
+                            class="badge text-bg-primary ms-3">{{enchantingFormulasCount}}</span></button>
+                    <button class="nav-link" id="nav-tailoring-tab" data-bs-toggle="tab" data-bs-target="#nav-tailoring"
+                        type="button" role="tab" aria-controls="nav-tailoring" aria-selected="false">Tailoring<span
+                            class="badge text-bg-primary ms-3">{{tailoringPatternsCount}}</span></button>
+                    <button class="nav-link" id="nav-cooking-tab" data-bs-toggle="tab" data-bs-target="#nav-cooking"
+                        type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Cooking<span
+                            class="badge text-bg-primary ms-3">{{cookingRecipesCount}}</span></button>
+                    <button class="nav-link" id="nav-import-tab" data-bs-toggle="tab" data-bs-target="#nav-import"
+                        type="button" role="tab" aria-controls="nav-import" aria-selected="false">Import</button>
+                </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+                <!-- Enchanting Tab Content-->
+                <div class="tab-pane fade show active" id="nav-enchanting" role="tabpanel"
+                    aria-labelledby="nav-enchanting-tab" tabindex="0">
+                    <div class="list-group">
+                        <li class="list-group-item py-4 border-top-0 rounded-0 d-flex gap-4">
+                            <input ng-model="enchantingSearchText" class="form-control" type="search"
+                                placeholder="Search" aria-label="Search">
+                            <select ng-model="enchantingCategorySelect" class="form-select"
+                                aria-label="Enchanting Categories">
+                                <option selected value>Select Category</option>
+                                <option ng-repeat="formula in enchantingFormulas | unique: 'category'"
+                                    value="{{formula.category}}">
+                                    {{formula.category}}</option>
+                            </select>
+                        </li>
+                        <a ng-repeat="formula in enchantingFormulas | orderBy: 'name' | filter: {category: enchantingCategorySelect, name: enchantingSearchText}"
+                            href="https://www.wowhead.com/classic/spell={{formula.id}}" target="_blank"
+                            class="list-group-item list-group-item-action">{{formula.name}}</a>
+                    </div>
+                </div>
+                <!-- Tailoring Tab Content -->
+                <div class="tab-pane fade" id="nav-tailoring" role="tabpanel" aria-labelledby="nav-tailoring-tab"
+                    tabindex="0">
+                    <div class="list-group">
+                        <li class="list-group-item py-4 border-top-0 rounded-0 d-flex gap-4">
+                            <input ng-model="tailoringSearchText" class="form-control" type="search"
+                                placeholder="Search" aria-label="Search">
+                            <select ng-model="tailoringCategorySelect" class="form-select"
+                                aria-label="Tailoring Categories">
+                                <option selected value>Select Category</option>
+                                <option ng-repeat="pattern in tailoringPatterns | unique: 'category'"
+                                    value="{{pattern.category}}">
+                                    {{pattern.category}}</option>
+                            </select>
+                        </li>
+                        <a ng-repeat="pattern in tailoringPatterns | orderBy: 'name' | filter: {category: tailoringCategorySelect, name: tailoringSearchText}"
+                            href="https://www.wowhead.com/classic/item={{pattern.id}}" target="_blank"
+                            class="list-group-item list-group-item-action">{{pattern.name}}</a>
+                    </div>
+                </div>
+                <!-- Cooking Tab Content-->
+                <div class="tab-pane fade" id="nav-cooking" role="tabpanel" aria-labelledby="nav-cooking-tab"
+                    tabindex="0">
+                    <div class="list-group">
+                        <li class="list-group-item py-4 border-top-0 rounded-0">
+                            <div class="col-6">
+                                <input ng-model="cookingSearchText" class="form-control" type="search"
+                                    placeholder="Search" aria-label="Search">
+                            </div>
+                        </li>
+                        <a ng-repeat="recipe in cookingRecipes | orderBy: 'name' | filter: cookingSearchText"
+                            href="https://www.wowhead.com/classic/item={{recipe.id}}" target="_blank"
+                            class="list-group-item list-group-item-action">{{recipe.name}}</a>
+                    </div>
+                </div>
+                <!-- Import Tab Content -->
+                <div class="tab-pane fade" id="nav-import" role="tabpanel" aria-labelledby="nav-import-tab"
+                    tabindex="0">
+                    <div class="list-group">
+                        <li class="list-group-item py-4 border-top-0 rounded-0">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Convert Import String to
+                                    JSON Object</label>
+                                <textarea ng-model="tradeSkillsInput" class="form-control" id="tradeSkillsInput"
+                                    rows="10" placeholder="Paste import string here..."></textarea>
+                            </div>
+                            <!-- Button trigger modal -->
+                            <button ng-click="convertExport()" type="button" class="btn btn-primary"
+                                data-bs-toggle="modal" data-bs-target="#importModal">
+                                Convert
+                            </button>
+                            <!-- JSON Conversion Modal -->
+                            <div class="modal fade" id="importModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-xl modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Converted JSON Object
+                                            </h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <code class="language-javascript" id="wowProfessions"></code></textarea>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button ng-click="copyWowTradeSkills('wowProfessions')"
+                                                data-bs-dismiss="modal" type="button" class="btn btn-primary">Copy to
+                                                Clipboard</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <p><small><i class="bi-code-square me-2"></i><span>Code by Spangoss</span><span class="ms-3">©
+                                2024</span></small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap and Popper Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script><!-- Custom scripts -->
+    <script src="scripts/theme-utils.js"></script>
+    <script src="scripts/wow-trade-skills.js"></script>
+    <!-- Angular JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"
+        integrity="sha512-KZmyTq3PLx9EZl0RHShHQuXtrvdJ+m35tuOiwlcZfs/rE7NZv29ygNA8SFCkMXTnYZQK2OX0Gm2qKGfvWEtRXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Wowhead Tooltips-->
+    <script>const whTooltips = { colorLinks: false, iconizeLinks: false, renameLinks: false };</script>
+    <script src="https://wow.zamimg.com/js/tooltips.js"></script>
+    <!-- Custom scripts -->
+    <script src="scripts/theme-utils.js"></script>
+    <script src="scripts/wow-trade-skills.js"></script>
+</body>
+
+</html>

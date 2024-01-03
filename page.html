@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
-<body class="h-100 d-flex flex-column bg-img">
+<body class="h-100 d-flex flex-column">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg px-2">
-        <div class="container-xl py-1">
+        <div class="container py-1">
             <a class="navbar-brand" href="index.html">
                 <svg class="inline-block logo" width="40" viewBox="0 0 500 354" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -41,17 +41,16 @@
                         <a class="nav-link" href="archive.html">Archive</a>
                     </li>
                 </ul>
-                <!-- Social Media Menu-->
+                <!-- Social media Menu -->
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/mbranscombe/ "
-                            target="_blank"><i class="bi-linkedin me-2"></i><span class="d-lg-none">LinkedIn</span></a>
-                    </li>
                     <li class="nav-item"><a class="nav-link" href="https://www.instagram.com/mook_spangoss/"
                             target="_blank"><i class="bi-instagram me-2"></i><span
                                 class="d-lg-none">Instagram</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@spangoss" target="_blank"><i
                                 class="bi-youtube me-2"></i><span class="d-lg-none">YouTube</span></a></li>
-
+                    <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/mbranscombe/ "
+                            target="_blank"><i class="bi-linkedin me-2"></i><span class="d-lg-none">LinkedIn</span></a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="https://untappd.com/user/Spangoss" target="_blank">
                             <svg class="me-3 custom-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -82,16 +81,27 @@
             </div>
         </div>
     </nav>
+
+    <!-- Breadcrumb-->
+    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+        aria-label="breadcrumb">
+        <div class="container py-3">
+            <ol class="breadcrumb py-3 mb-0">
+                <li class="breadcrumb-item"><a href="index.html"><i class="bi-house-door-fill me-2"></i>Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Archive</li>
+            </ol>
+        </div>
+    </nav>
+
     <!-- Content -->
-    <div class="container d-flex flex-grow-1 align-items-center">
+    <div class="container">
         <div class="row">
-            <div class="col-7">
-                <h3>the random code doodlings of</h3>
-                <h1 class="display-3 fw-bold">Mark Branscombe</h1>
+            <div class="col">
+                <h1>Heading</h1>
             </div>
             <div class="row">
-                <div class="col-9">
-                    <p class="fs-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius cum voluptates
+                <div class="col">
+                    <p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius cum voluptates
                         sed
                         velit
                         quasi architecto
@@ -114,6 +124,7 @@
             </div>
         </div>
     </footer>
+
 
     <!-- Bootstrap and Popper Javascript-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"

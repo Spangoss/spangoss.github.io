@@ -1,0 +1,222 @@
+[
+    {
+        "id": "13529",
+        "name": "Enchant 2H Weapon - Lesser Impact",
+        "category": "2H Weapon"
+    },
+    {
+        "id": "13622",
+        "name": "Enchant Bracer - Lesser Intellect",
+        "category": "Bracer"
+    },
+    {
+        "id": "13501",
+        "name": "Enchant Bracer - Lesser Stamina",
+        "category": "Bracer"
+    },
+    {
+        "id": "13536",
+        "name": "Enchant Bracer - Lesser Strength",
+        "category": "Bracer"
+    },
+    {
+        "id": "13538",
+        "name": "Enchant Chest - Lesser Absorption",
+        "category": "Chest"
+    },
+    {
+        "id": "13607",
+        "name": "Enchant Chest - Mana",
+        "category": "Chest"
+    },
+    {
+        "id": "13626",
+        "name": "Enchant Chest - Minor Stats",
+        "category": "Chest"
+    },
+    {
+        "id": "13620",
+        "name": "Enchant Gloves - Fishing",
+        "category": "Gloves"
+    },
+    {
+        "id": "13612",
+        "name": "Enchant Gloves - Mining",
+        "category": "Gloves"
+    },
+    {
+        "id": "13485",
+        "name": "Enchant Shield - Lesser Spirit",
+        "category": "Shield"
+    },
+    {
+        "id": "13503",
+        "name": "Enchant Weapon - Lesser Striking",
+        "category": "Weapon"
+    },
+    {
+        "id": "13628",
+        "name": "Runed Golden Rod",
+        "category": "Other"
+    },
+    {
+        "id": "13380",
+        "name": "Enchant 2H Weapon - Lesser Spirit",
+        "category": "2H Weapon"
+    },
+    {
+        "id": "7867",
+        "name": "Enchant Boots - Minor Agility",
+        "category": "Boots"
+    },
+    {
+        "id": "7863",
+        "name": "Enchant Boots - Minor Stamina",
+        "category": "Boots"
+    },
+    {
+        "id": "7859",
+        "name": "Enchant Bracer - Lesser Spirit",
+        "category": "Bracer"
+    },
+    {
+        "id": "7857",
+        "name": "Enchant Chest - Health",
+        "category": "Chest"
+    },
+    {
+        "id": "7861",
+        "name": "Enchant Cloak - Lesser Fire Resistance",
+        "category": "Cloak"
+    },
+    {
+        "id": "13421",
+        "name": "Enchant Cloak - Lesser Protection",
+        "category": "Cloak"
+    },
+    {
+        "id": "13419",
+        "name": "Enchant Cloak - Minor Agility",
+        "category": "Cloak"
+    },
+    {
+        "id": "13464",
+        "name": "Enchant Shield - Lesser Protection",
+        "category": "Shield"
+    },
+    {
+        "id": "7793",
+        "name": "Enchant 2H Weapon - Lesser Intellect",
+        "category": "2H Weapon"
+    },
+    {
+        "id": "7745",
+        "name": "Enchant 2H Weapon - Minor Impact",
+        "category": "2H Weapon"
+    },
+    {
+        "id": "7779",
+        "name": "Enchant Bracer - Minor Agility",
+        "category": "Bracer"
+    },
+    {
+        "id": "7782",
+        "name": "Enchant Bracer - Minor Strength",
+        "category": "Bracer"
+    },
+    {
+        "id": "7776",
+        "name": "Enchant Chest - Lesser Mana",
+        "category": "Chest"
+    },
+    {
+        "id": "13378",
+        "name": "Enchant Shield - Minor Stamina",
+        "category": "Shield"
+    },
+    {
+        "id": "7786",
+        "name": "Enchant Weapon - Minor Beastslayer",
+        "category": "Weapon"
+    },
+    {
+        "id": "7788",
+        "name": "Enchant Weapon - Minor Striking",
+        "category": "Weapon"
+    },
+    {
+        "id": "7795",
+        "name": "Runed Silver Rod",
+        "category": "Other"
+    },
+    {
+        "id": "430409",
+        "name": "Blackfathom Mana Oil",
+        "category": "Other"
+    },
+    {
+        "id": "7428",
+        "name": "Enchant Bracer - Minor Deflect",
+        "category": "Bracer"
+    },
+    {
+        "id": "7418",
+        "name": "Enchant Bracer - Minor Health",
+        "category": "Bracer"
+    },
+    {
+        "id": "7766",
+        "name": "Enchant Bracer - Minor Spirit",
+        "category": "Bracer"
+    },
+    {
+        "id": "7457",
+        "name": "Enchant Bracer - Minor Stamina",
+        "category": "Bracer"
+    },
+    {
+        "id": "7748",
+        "name": "Enchant Chest - Lesser Health",
+        "category": "Chest"
+    },
+    {
+        "id": "7426",
+        "name": "Enchant Chest - Minor Absorption",
+        "category": "Chest"
+    },
+    {
+        "id": "7420",
+        "name": "Enchant Chest - Minor Health",
+        "category": "Chest"
+    },
+    {
+        "id": "7443",
+        "name": "Enchant Chest - Minor Mana",
+        "category": "Chest"
+    },
+    {
+        "id": "7771",
+        "name": "Enchant Cloak - Minor Protection",
+        "category": "Cloak"
+    },
+    {
+        "id": "7454",
+        "name": "Enchant Cloak - Minor Resistance",
+        "category": "Cloak"
+    },
+    {
+        "id": "14807",
+        "name": "Greater Magic Wand",
+        "category": "Wands"
+    },
+    {
+        "id": "14293",
+        "name": "Lesser Magic Wand",
+        "category": "Wands"
+    },
+    {
+        "id": "7421",
+        "name": "Runed Copper Rod",
+        "category": "Other"
+    }
+]
