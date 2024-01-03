@@ -16,9 +16,8 @@ app.filter("unique", function () {
 });
 
 
-var JSONenchantingFormulas = loadJSON('assets/enchanting_formulas.json');
+var JSONenchantingFormulas = loadJSON('http://spangoss.github.io/assets/enchanting_formulas.json');
 console.log(JSONenchantingFormulas);
-
 
 function loadJSON(callback) {
 
