@@ -1,5 +1,7 @@
 /* CSS Variables */
-:root {}
+:root {
+    --spangoss-pink: #EB306D;
+}
 
 /* Custom Light Mode Variables */
 [data-bs-theme=light] {
@@ -36,7 +38,7 @@ footer {
 
 /* Navbar */
 .logo {
-    fill: var(--mb-test);
+    fill: var(--spangoss-pink);
 }
 
 .navbar-brand:hover {
@@ -98,4 +100,9 @@ footer {
 
 .card:hover h5 {
     color: var(--bs-heading-color) !important;
+}
+
+.horde-logo {
+    max-height: 4rem;
+    ;
 }
