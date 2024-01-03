@@ -1,5 +1,15 @@
 var app = angular.module('tradeSkills', []);
 
+getJSON();
+
+function getJSON() {
+    fetch("assets/enchanting-formulas.json")
+        .then((res) => {
+            return res.json();
+        })
+        .then((data) => console.log(data));
+}
+
 app.filter("unique", function () {
     return function (collection, keyname) {
         var output = [],

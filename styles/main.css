@@ -4,11 +4,13 @@
 /* Custom Light Mode Variables */
 [data-bs-theme=light] {
     --bg-img-url: url(https://zebreus.github.io/all-gnome-backgrounds/images/adwaita-d-a422a4a11d335ce04783ef902b786dbf4fdf6441.webp);
+    --mb-test: #EE383B;
 }
 
 /* Custom Dark Mode Variables */
 [data-bs-theme=dark] {
     --bg-img-url: url(https://zebreus.github.io/all-gnome-backgrounds/images/adwaita-d-ebee211cfcac7105b0b407b0b03ab2107f6e33be.webp);
+    --mb-test: #0774FE;
 }
 
 html,
@@ -34,7 +36,7 @@ footer {
 
 /* Navbar */
 .logo {
-    fill: #5F33E4;
+    fill: var(--mb-test);
 }
 
 .navbar-brand:hover {
