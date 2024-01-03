@@ -18,6 +18,12 @@ app.filter("unique", function () {
 
 app.controller('tradeSkillsCntrl', function ($scope) {
 
+    $scope.showImportTab = false;
+    $scope.toggleImportTab = function () {
+        $scope.showImportTab = !$scope.showImportTab;
+    }
+
+
     $scope.convertExport = function () {
         var arrInput = $scope.tradeSkillsInput.split('\n');
         var arrSkills = [];

@@ -30,8 +30,18 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <!-- Theme Selector -->
+                <!-- Social Media Menu-->
                 <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a ng-click="toggleImportTab()" class="nav-link" href="#">
+                            <i class="bi-upload me-2"></i>
+                            <span class="d-lg-none">Upload Data</span>
+                        </a>
+                    </li>
+
+
+                    <!-- Theme Selector -->
+                    <li class="navbar-separator border-start ps-3 sm-d-none"></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -49,8 +59,6 @@
                                         class="bi-circle-half me-2 theme-icon"></i>Auto</button></li>
                         </ul>
                     </li>
-                </ul>
-                </li>
                 </ul>
             </div>
         </div>
@@ -86,8 +94,9 @@
                     <button class="nav-link" id="nav-cooking-tab" data-bs-toggle="tab" data-bs-target="#nav-cooking"
                         type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Cooking<span
                             class="badge text-bg-primary ms-3">{{cookingRecipesCount}}</span></button>
-                    <button class="nav-link" id="nav-import-tab" data-bs-toggle="tab" data-bs-target="#nav-import"
-                        type="button" role="tab" aria-controls="nav-import" aria-selected="false">Import</button>
+                    <button ng-if="showImportTab" class="nav-link" id="nav-import-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-import" type="button" role="tab" aria-controls="nav-import"
+                        aria-selected="false">Import</button>
                 </div>
             </nav>
             <div class="tab-content" id="nav-tabContent">
@@ -168,6 +177,22 @@
                                 <div class="modal-dialog modal-xl modal-dialog-scrollable">
                                     <div class="modal-content">
                                         <div class="modal-header">
+
+
+                                            <div class="mb-3">
+                                                <label for="exampleFormControlTextarea1" class="form-label">Convert
+                                                    Import String to
+                                                    JSON Object</label>
+                                                <textarea ng-model="tradeSkillsInput" class="form-control"
+                                                    id="tradeSkillsInput" rows="10"
+                                                    placeholder="Paste import string here..."></textarea>
+                                            </div>
+                                            <!-- Button trigger modal -->
+                                            <button ng-click="convertExport()" type="button" class="btn btn-primary"
+                                                data-bs-toggle="modal" data-bs-target="#importModal">
+                                                Convert
+                                            </button>
+
                                             <h1 class="modal-title fs-5" id="exampleModalLabel">Converted JSON Object
                                             </h1>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
