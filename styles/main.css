@@ -34,7 +34,7 @@ footer {
 
 /* Navbar */
 .logo {
-    fill: var(--bs-heading-color);
+    fill: #5F33E4;
 }
 
 .navbar-brand:hover {
