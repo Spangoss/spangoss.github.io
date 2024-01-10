@@ -181,9 +181,13 @@
                                     rows="10" placeholder="Paste import string here..."></textarea>
                             </div>
                             <!-- Button trigger modal -->
-                            <button ng-click="convertExport()" type="button" class="btn btn-primary"
+                            <button ng-click="convertExport()" type="button" class="btn btn-primary me-2"
                                 data-bs-toggle="modal" data-bs-target="#importModal">
                                 Convert
+                            </button>
+                            <!-- Button Clear Text Area -->
+                            <button ng-click="clearTextArea('tradeSkillsInput')" type="button" class="btn btn-danger">
+                                Clear
                             </button>
                             <!-- JSON Conversion Modal -->
                             <div class="modal fade" id="importModal" tabindex="-1" aria-labelledby="exampleModalLabel"
