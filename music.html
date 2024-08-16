@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#F7F7F9" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#1F2124" media="(prefers-color-scheme: dark)">
+    <!-- Metadata -->
+    <title>Mark Branscombe | Music</title>
+    <meta name="description" content="Personal website of Mark Branscombe.">
+    <meta name="keywords" content="mark branscombe, servicenow, developer">
+    <link rel="canonical" href="https://spangoss.net" />
+    <!-- Manifest -->
+    <link rel="manifest" href="site.webmanifest">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Custom Scripts-->
+    <script src="scripts/color-mode-toggler.js"></script>
+    <script src="scripts/rainbow-text.js"></script>
+    <script src="scripts/audio.js"></script>
+    <!-- Bootstrap Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg mb-3 mt-lg-4">
+        <div class="container-lg container-fluid-md">
+            <a class="navbar-brand logo" href="index.html">{mb}</a>
+            <!--<img src="/images/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">-->
+            <div class="form-check form-switch mode-switch order-lg-2 ms-auto" data-bs-toggle="mode">
+                <input class="form-check-input" type="checkbox" role="switch">
+                <label class="form-check-label" for="flexSwitchCheckDefault"></label>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-end" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link" href="art.html">ART</a>
+                    </li>
+                    <li class="nav-item me-3">
+                        <a class="nav-link active" href="music.html">MUSIC</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <div class="container-lg container-fluid-md mb-3">
+        <div class="row">
+            <div class="col">
+                <h1 class="rainbow-text">Music</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ad eveniet
+                    debitis eligendi voluptates amet laborum! Totam unde ab officiis sequi officia ex mollitia modi,
+                    quae in consequatur impedit cum?</p>
+            </div>
+        </div>
+
+
+        <ul class="list-group">
+            <li class="list-group-item">
+                <div>Track Name</div>
+                <div class="safari-audio-player">
+                    <audio controls preload="none">
+                        <source src="audio/test.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div>Track Name</div>
+                <div class="safari-audio-player">
+                    <audio controls preload="none">
+                        <source src="audio/test.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </li>
+            <li class="list-group-item">
+                <div>Track Name</div>
+                <div class="safari-audio-player">
+                    <audio controls preload="none">
+                        <source src="audio/test.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+    <!-- Footer-->
+    <footer class="mt-auto">
+        <p class="text-center text-secondary">
+            <small>
+                <i class="bi bi-code-square me-2"></i>
+                Code by Mark Branscombe | &copy; 2024
+            </small>
+        </p>
+    </footer>
+</body>
+
+</html>

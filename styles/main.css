@@ -1,0 +1,129 @@
+:root {
+    --red: #ee383b;
+    --orange: #ef8a0a;
+    --yellow: #F0C704;
+    --green: #27a757;
+    --teal: #28BDAF;
+    --cyan: #20BCEB;
+    --blue: #0774fe;
+    --indigo: #5F33E4;
+    --purple: #673BD3;
+    --pink: rgb(235, 48, 109);
+    --gray: #7d8288;
+    --light: #F7F7F9;
+    --dark: #1F2124;
+
+    /* Bootstrap Overrides */
+    --bs-primary-rgb: 7, 116, 254;
+    --bs-secondary-rgb: 125, 130, 136;
+    --bs-success-rgb: 39, 167, 87;
+    --bs-warning-rgb: 239, 138, 10;
+    --bs-danger-rgb: 238, 56, 59;
+
+    --form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    --form-switch-dark-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 21 26' %3e%3cpath d='M4 22.1679C7.5318 20.6248 9.99998 17.1006 9.99998 13C9.99998 8.89937 7.5318 5.37521 4 3.8321C5.22493 3.2969 6.5778 3 8.00002 3C13.5229 3 18 7.47715 18 13C18 18.5228 13.5229 23 8.00002 23C6.5778 23 5.22493 22.7031 4 22.1679Z' fill='%23fff' /%3e%3c/svg%3e");
+}
+
+
+/* Light Theme Variables */
+[data-bs-theme=light] {
+    --bs-body-bg: var(--light);
+    --bs-body-color: var(--dark);
+    --form-switch-bg-color: var(--gray);
+}
+
+/* Dark Theme Variables */
+[data-bs-theme=dark] {
+    --bs-body-bg: var(--dark);
+    --bs-body-color: var(--light);
+    --form-switch-bg-color: var(--bs-gray-800);
+}
+
+/* Custom Font Classes */
+.ff-ubuntu {
+    font-family: ubuntu;
+}
+
+.rainbow-text {
+    opacity: 0.8;
+}
+
+/* Navbar */
+.navbar-toggler {
+    border: none;
+}
+
+.logo {
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+/* Dark Mode toggle */
+.form-switch .form-check-input {
+    background-image: var(--form-switch-bg);
+}
+
+.logo:hover {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.form-switch.mode-switch .form-check-input:checked {
+    background-image: var(--form-switch-dark-bg);
+}
+
+.form-switch .form-check-input {
+    height: 1.2rem;
+    width: 2.4em;
+    background-color: var(--form-switch-bg-color);
+    border: unset;
+}
+
+/* Index */
+.title {
+    font-weight: 700;
+    font-size: calc(4.2rem + 6.8vw);
+    line-height: 80%;
+    letter-spacing: -0.5rem;
+    word-spacing: 25rem;
+}
+
+/* About */
+.social-icon {
+    font-size: 3rem;
+}
+
+.bi-instagram:hover {
+    background-image: linear-gradient(115deg, #6228d7, #ee2a7b, #f9ce34);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0px 0px #00000000;
+    display: block;
+}
+
+.bi-youtube:hover {
+    color: #FF0000;
+}
+
+.bi-linkedin:hover {
+    color: #0a66c2;
+}
+
+/* Music */
+audio {
+    width: 100%;
+}
+
+.media-control {
+    font-size: 1.6rem;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: var(--bs-body-bg);
+}
+
+@supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
+    .safari-audio-player {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+    }
+}
