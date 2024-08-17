@@ -39,6 +39,20 @@
     --form-switch-bg-color: var(--bs-gray-800);
 }
 
+/* iPhone Optimisation */
+html {
+    scroll-behavior: smooth;
+    padding-top: max(0, env(safe-area-inset-top));
+    padding-right: max(0, env(safe-area-inset-right));
+    padding-bottom: max(0, env(safe-area-inset-bottom));
+    padding-right: max(0, env(safe-area-inset-left));
+}
+
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 /* Custom Font Classes */
 .ff-ubuntu {
     font-family: ubuntu;
