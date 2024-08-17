@@ -1,19 +1,33 @@
 {
     "name": "Mark Branscombe",
-    "short_name": "mb",
+    "short_name": "Spangoss",
     "icons": [
         {
-            "src": "/icon-192.png",
+            "src": "/images/icons/pwa-192x192.png",
+            "sizes": "192x192",
             "type": "image/png",
-            "sizes": "192x192"
+            "purpose": "any"
         },
         {
-            "src": "/icon-512.png",
+            "src": "/images/icons/pwa-512x512.png",
+            "sizes": "512x512",
             "type": "image/png",
-            "sizes": "512x512"
+            "purpose": "any"
+        },
+        {
+            "src": "/images/icons/pwa-maskable-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "/images/icons/pwa-maskable-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
         }
     ],
-    "start_url": "https://spangoss.net",
+    "start_url": "spangoss.net",
     "display": "standalone",
     "background_color": "#1F2124",
     "theme_color": "#EB306D",
