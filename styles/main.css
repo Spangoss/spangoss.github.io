@@ -49,8 +49,8 @@ html {
 }
 
 body {
-    overflow-x: hidden;
-    max-width: 100%;
+    overflow: hidden;
+    width: 100%;
 }
 
 /* Custom Font Classes */
