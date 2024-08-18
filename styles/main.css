@@ -95,9 +95,9 @@ body {
 /* Index */
 .title {
     font-weight: 700;
-    font-size: calc(4.2rem + 6.8vw);
+    font-size: calc(4rem + 6vw);
     line-height: 80%;
-    letter-spacing: -0.5rem;
+    letter-spacing: -0.25rem;
     word-spacing: 25rem;
 }
 
