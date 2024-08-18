@@ -15,16 +15,26 @@
             return storedTheme
         }
 
-        // Set default theme to 'light'.
-        // Possible options: 'dark' or system color mode (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+        // Set default theme
+        // Possible options: 'light', 'dark' or system color mode (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
         return (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
     }
 
     const setTheme = theme => {
+
+        const colors = {
+            dark: '#1F2124', // color for the dark-mode theme
+            light: '#F7F7F9' // color for the retro theme
+        }
+
+        var metaThemeColor = document.querySelector("meta[name=theme-color]")
+
         if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
             document.documentElement.setAttribute('data-bs-theme', 'dark')
+            metaThemeColor.setAttribute('content', colors[theme]);
         } else {
             document.documentElement.setAttribute('data-bs-theme', theme)
+            metaThemeColor.setAttribute('content', colors[theme]);
         }
     }
 
