@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /template.html
+
+Sitemap: https://spangoss.net/sitemap.xml
