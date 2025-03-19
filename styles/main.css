@@ -1,23 +1,23 @@
 :root {
-    --red: #ee383b;
-    --orange: #ef8a0a;
-    --yellow: #F0C704;
-    --green: #27a757;
+    --red: #EE383B;
+    --orange: #FE8A0A;
+    --yellow: #FFC715;
+    --green: #27A757;
     --teal: #28BDAF;
     --cyan: #20BCEB;
-    --blue: #0774fe;
+    --blue: #0774FE;
     --indigo: #5F33E4;
-    --purple: #673BD3;
-    --pink: rgb(235, 48, 109);
-    --gray: #7d8288;
-    --light: #F7F7F9;
-    --dark: #1F2124;
+    --purple: #8F4AD0;
+    --pink: #EB306D;
+    --gray: #8B8C8F;
+    --light: #F7F7F8;
+    --dark: #202024;
 
     /* Bootstrap Overrides */
     --bs-primary-rgb: 7, 116, 254;
-    --bs-secondary-rgb: 125, 130, 136;
+    --bs-secondary-rgb: 139, 140, 1;
     --bs-success-rgb: 39, 167, 87;
-    --bs-warning-rgb: 239, 138, 10;
+    --bs-warning-rgb: 254, 138, 10;
     --bs-danger-rgb: 238, 56, 59;
 
     --form-switch-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
