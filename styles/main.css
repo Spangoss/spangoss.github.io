@@ -9,13 +9,13 @@
     --indigo: #5F33E4;
     --purple: #8F4AD0;
     --pink: #EB306D;
-    --gray: #8B8C8F;
+    --gray: rgb(139, 140, 143);
     --light: #F7F7F8;
     --dark: #202024;
 
     /* Bootstrap Overrides */
     --bs-primary-rgb: 7, 116, 254;
-    --bs-secondary-rgb: 139, 140, 1;
+    --bs-secondary-rgb: 139, 140, 143;
     --bs-success-rgb: 39, 167, 87;
     --bs-warning-rgb: 254, 138, 10;
     --bs-danger-rgb: 238, 56, 59;
