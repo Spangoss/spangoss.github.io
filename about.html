@@ -39,6 +39,7 @@
     <!-- Custom Scripts-->
     <script src="scripts/color-mode-toggler.js"></script>
     <script src="scripts/rainbow-text.js"></script>
+    <script src="scripts/birthday.js"></script>
 </head>
 
 <body class="d-flex flex-column h-100">
@@ -74,37 +75,93 @@
     </nav>
     <!-- Main Content -->
     <div class="container mb-5 pb-5">
+        <!-- New Stuff-->
+
         <div class="row">
-            <div class="col">
-                <h1 class="title rainbow-text mb-3">About</h1>
-                <p class="lead">I'm a ServiceNow Developer and generic nerd.</p>
-                <p>This website is a place for random 'creative' noodlings that I might partake in from time to time and
-                    somewhere for me to practice web development and design.
-                </p>
-                <nav class="navbar navbar-expand">
-                    <div class="container ps-0">
-                        <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav gap-3 display-4">
-                                <!-- Removing Instrgram / YouTube as not using or posting to these -->
-                                <!-- <li class="nav-item">
-                                    <a href="https://www.instagram.com/mook_spangoss/" target="_blank"
-                                        class="nav-link"><i class="bi bi-instagram"></i></a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="https://www.youtube.com/@spangoss" target="_blank" class="nav-link"><i
-                                            class="bi bi-youtube"></i></a>
-                                </li>-->
-                                <li class="nav-item">
-                                    <a href="https://www.linkedin.com/in/mbranscombe/" target="_blank"
-                                        class="nav-link"><i class="bi bi-linkedin"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="col text-center">
+                <div class="mb-3"><img src="images/avatar.png" class="rounded-circle" height="192px" width="192px"
+                        alt="avatar"></div>
+                <div>
+                    <h1 class="">Mark Branscombe</h1>
+                </div>
+                <div>
+                    <p class="lead ff-ubuntu">ServiceNow Developer and Nerd</p>
+                </div>
+
+
+                <nav class="navbar navbar-expand justify-content-center">
+                    <ul class="navbar-nav gap-4">
+                        <li class="nav-item display-6">
+                            <a href="https://www.linkedin.com/in/mbranscombe/" target="_blank" class="nav-link"><i
+                                    class="bi bi-linkedin"></i></a>
+                        </li>
+                        <li class="nav-item display-6">
+                            <a href="https://www.credly.com/users/mbranscombe/" target="_blank" class="nav-link"><i
+                                    class="bi bi-award-fill"></i></a>
+                        </li>
+                    </ul>
+                </nav>
+                <nav class="navbar navbar-expand justify-content-center">
+                    <ul class="navbar-nav gap-4">
+                        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#location-modal""><a href="
+                            javascript:void(0)" target="_blank" class="nav-link"><i
+                                class="bi bi-geo-alt me-1"></i>UK</a></li>
+                        <li class="nav-item" data-bs-toggle="modal" data-bs-target="#birthday-modal"><a
+                                href="javascript:void(0)" target="_blank" class="nav-link"><i
+                                    class="bi bi-cake2 me-2"></i><span id="birthday"></span></a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </div>
+
+
+    <!-- Birthday Modal -->
+    <div class="modal fade" id="birthday-modal" tabindex="-1" aria-labelledby="birthday-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-body">
+                    <h5 class="modal-title">Next birthday in</h5>
+                    <div class="row justify-content-center my-2">
+                        <div class="col-3">
+                            <h3 id="countdown-days" class="display-4 mb-0"></h3>
+                            <p>Days</p>
+                        </div>
+                        <div class="col-3">
+                            <h3 id="countdown-hours" class="display-4 mb-0">00</h3>
+                            <p>Hours</p>
+                        </div>
+                        <div class="col-3">
+                            <h3 id="countdown-minutes" class="display-4 mb-0">00</h3>
+                            <p>Minutes</p>
+                        </div>
+                        <div class="col-3">
+                            <h3 id="countdown-seconds" class="display-4 mb-0">00</h3>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                    <h5 class="modal-title"><i class="bi bi-balloon me-2"></i><span id="my-age"></span> years</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Location Modal -->
+    <div class="modal fade" id="location-modal" tabindex="-1" aria-labelledby="location-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-body">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9585120.715194838!2d-15.013508917297171!3d54.08939450617835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x25a3b1142c791a9%3A0xc4f8a0433288257a!2sUnited%20Kingdom!5e0!3m2!1sen!2sus!4v1765580404799!5m2!1sen!2sus"
+                        width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Footer-->
     <footer class="mt-auto">
         <p class="text-center text-secondary">
